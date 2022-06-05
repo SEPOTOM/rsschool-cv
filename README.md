@@ -1,1 +1,1 @@
-[CV](https://SEPOTOM.github.io/rsschool-cv/cv)
+[CV](https://SEPOTOM.github.io/rsschool-cv/)
