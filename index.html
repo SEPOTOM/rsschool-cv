@@ -3,10 +3,220 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
+		<meta name="viewport" content="width=1000, initial-scale=1.0">
+		<link rel="icon" href="assets/icons/favicon.ico">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
+		<link rel="stylesheet" href="style.css">
+		<title>CV</title>
 	</head>
 	<body>
-		CV
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<nav class="header__navigation">
+						<ul class="header__list">
+							<li class="header__item"><a class="header__link" href="#about-me">About Me</a></li>
+							<li class="header__item"><a class="header__link" href="#skills">Skills</a></li>
+							<li class="header__item"><a class="header__link" href="#education">Education</a></li>
+							<li class="header__item"><a class="header__link" href="#code-examples">Code examples</a></li>
+							<li class="header__item"><a class="header__link" href="#projects">Projects</a></li>
+							<li class="header__item"><a class="header__link" href="#languages">Languages</a></li>
+							<li class="header__item"><a class="header__link" href="#contacts">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main class="main">
+				<section class="profile">
+					<div class="profile__container">
+						<div class="profile__picture">
+							<img class="profile__image" src="assets/img/profile/my_photo.png" alt="My photo">
+						</div>
+						<div class="profile__content">
+							<h1 class="profile__title">Artyom Pizin</h1>
+							<p class="profile__subtitle">Junior Front-end developer (beginner)</p>
+							<address class="profile__contacts">
+								<ul class="profile__list">
+									<li class="profile__item">
+										<a class="profile__link" href="mailto:artempetr2016@gmail.com" target="_blank">
+											<img class="profile__icon" src="assets/icons/email_icon.svg" alt="Email image">
+											artempetr2016@gmail.com
+										</a>
+									</li>
+									<li class="profile__item">
+										<a class="profile__link" href="https://github.com/SEPOTOM" target="_blank">
+											<img class="profile__icon" src="assets/icons/github_icon.svg" alt="GitHub image">
+											GitHub
+										</a>
+									</li>
+								</ul>
+							</address>
+						</div>
+					</div>
+				</section>
+				<section class="about dark-block" id="about-me">
+					<div class="about__container">
+						<h2 class="about__title title">About Me</h2>
+						<p class="about__text">
+							Born on June 7, 2004 in Petrovskoye, Ukraine. In high school, I started to get interested in website development and realized that this is what I want to do. I am calm, patient, diligent, have no problems in communication. I am constantly studying new technologies, I have good learning ability. I am striving to become a Frontend developer.
+						</p>
+					</div>
+				</section>
+				<section class="skills" id="skills">
+					<div class="skills__container">
+						<h2 class="skills__title title">Skills</h2>
+						<div class="skills__content">
+							<ul class="skills__list">
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/js_icon.png" alt="JS icon">
+									<p class="skills__text skills__text_white">Basic JS</p>
+								</li>
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/git_icon.png" alt="Git icon">
+									<p class="skills__text skills__text_white">Git</p>
+								</li>
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/github_icon.png" alt="GitHub icon">
+									<p class="skills__text skills__text_white">GitHub</p>
+								</li>
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/chrome_devtools_icon.png" alt="Chrome icon">
+									<p class="skills__text skills__text_white">Chrome DevTools</p>
+								</li>
+							</ul>
+							<ul class="skills__list">
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/html_icon.png" alt="HTML icon">
+									<p class="skills__text">HTML</p>
+								</li>
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/css_icon.png" alt="CSS icon">
+									<p class="skills__text">CSS</p>
+								</li>
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/scss_icon.png" alt="SCSS icon">
+									<p class="skills__text">SCSS</p>
+								</li>
+								<li class="skills__item">
+									<img class="skills__image" src="assets/img/skills/bem_icon.png" alt="BEM icon">
+									<p class="skills__text">BEM</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="education" id="education">
+					<div class="education__container">
+						<h2 class="education__title title">Education</h2>
+						<ul class="education__list dark-list">
+							<li class="dark-list__item">Secondary education</li>
+							<li class="dark-list__item">A course on layout from a <span class="dark-list__name">Freelancer for life</span></li>
+						</ul>
+					</div>
+				</section>
+				<section class="code dark-block" id="code-examples">
+					<div class="code__container">
+						<h2 class="code__title title">Code examples</h2>
+						<pre class="code__example">
+							<code class="code__inner">
+function multiply(a, b) {
+  return a * b;
+}
+							</code>
+						</pre>
+					</div>
+				</section>
+				<section class="projects" id="projects">
+					<div class="projects__container">
+						<h2 class="projects__title title">Projects</h2>
+						<ul class="projects__list">
+							<li class="projects__item">
+								<article class="project">
+									<a class="project__link" href="https://SEPOTOM.github.io/rsschool-cv" target="_blank">
+										<img class="project__image" src="assets/img/projects/cv_home.jpg" alt="Project image">
+									</a>
+									<a class="project__info" href="https://SEPOTOM.github.io/rsschool-cv" target="_blank">
+										<h3 class="project__title">CV</h3>
+										<p class="project__desc">CV of the future specialist</p>
+									</a>
+								</article>
+							</li>
+							<li class="projects__item">
+								<article class="project">
+									<a class="project__link" href="https://sepotom.github.io/gericht/" target="_blank">
+										<img class="project__image" src="assets/img/projects/gericht_home.jpg" alt="Project image">
+									</a>
+									<a class="project__info" href="https://sepotom.github.io/gericht/" target="_blank">
+										<h3 class="project__title">GERICHT</h3>
+										<p class="project__desc">Website of the bar-restaurant "GERICHT"</p>
+									</a>
+								</article>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="languages" id="languages">
+					<div class="languages__container">
+						<h2 class="languages__title title">Languages</h2>
+						<ul class="languages__list dark-list">
+							<li class="dark-list__item"><span class="dark-list__name">Russian:</span> Native</li>
+							<li class="dark-list__item"><span class="dark-list__name">Ukrainian:</span> Native</li>
+							<li class="dark-list__item"><span class="dark-list__name">English:</span> Elementary (A1)</li>
+						</ul>
+					</div>
+				</section>
+				<section class="contacts" id="contacts">
+					<div class="contacts__container">
+						<h2 class="contacts__title title">Contacts</h2>
+						<address class="contacts__inner">
+							<ul class="contacts__list">
+								<li class="contacts__item">
+									<p class="contacts__info">
+										<img class="contacts__image" src="assets/icons/direction_icon.svg" alt="Direction icon">
+										<span class="contacts__label">Location:</span> Petrovskoye, Luhansk region, Ukraine
+									</p>
+								</li>
+								<li class="contacts__item">
+									<p class="contacts__info">
+										<img class="contacts__image" src="assets/icons/vkontakte_icon.svg" alt="VKontakte icon">
+										<span class="contacts__label">VKontakte:</span> <a href="https://vk.com/vselenskii.motopes" class="contacts__link" target="_blank">Pizin Artyom</a>
+									</p>
+								</li>
+								<li class="contacts__item">
+									<p class="contacts__info">
+										<img class="contacts__image" src="assets/icons/email_icon.svg" alt="Email icon">
+										<span class="contacts__label">Email:</span> <a href="mailto:artempetr2016@gmail.com" class="contacts__link" target="_blank">artempetr2016@gmail.com</a>
+									</p>
+								</li>
+								<li class="contacts__item">
+									<p class="contacts__info">
+										<img class="contacts__image" src="assets/icons/telegram_icon.svg" alt="Telegram icon">
+										<span class="contacts__label">Telegram:</span> <a href="t.me/M0T0PES" class="contacts__link" target="_blank">Pizin Artyom</a>
+									</p>
+								</li>
+								<li class="contacts__item">
+									<p class="contacts__info">
+										<img class="contacts__image" src="assets/icons/github_icon.svg" alt="GitHub icon">
+										<span class="contacts__label">GitHub:</span> <a href="https://github.com/SEPOTOM" class="contacts__link" target="_blank">SEPOTOM</a>
+									</p>
+								</li>
+								<li class="contacts__item">
+									<p class="contacts__info">
+										<img class="contacts__image" src="assets/icons/discord_icon.svg" alt="Discord icon">
+										<span class="contacts__label">Discord:</span> Motopes (@SEPOTOM)
+									</p>
+								</li>
+							</ul>
+						</address>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<time class="footer__date" datetime="2022-06-13">2022</time>
+				<a class="footer__link" href="https://github.com/SEPOTOM" target="_blank"><img class="footer__image" src="assets/img/footer/github_icon.svg" alt="GitHub icon"></a>
+				<a class="footer__link" href="https://rs.school/js/" target="_blank"><img class="footer__image" src="assets/img/footer/rs_school_js.svg" alt="RSSchool icon"></a>
+			</footer>
+		</div>
 	</body>
 </html>
