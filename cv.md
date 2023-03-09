@@ -85,3 +85,9 @@ function convert(input, source, target) {
 - Secondary education
 - A [course](https://edu.fls.guru/) on layout from a Freelancer for life
 - RS Schools [course](https://rs.school/js-stage0/) «JavaScript/Front-end. Stage 0»
+
+## Languages
+
+- **Russian:** Native
+- **Ukrainian:** Native
+- **English:** Pre Intermediate (A2)
