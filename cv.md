@@ -79,3 +79,9 @@ function convert(input, source, target) {
 
 - ***CV:*** [https://SEPOTOM.github.io/rsschool-cv/cv](https://SEPOTOM.github.io/rsschool-cv/cv)
 - ***GERÍCHT:*** [https://sepotom.github.io/gericht/](https://sepotom.github.io/gericht/)
+
+## Education
+
+- Secondary education
+- A [course](https://edu.fls.guru/) on layout from a Freelancer for life
+- RS Schools [course](https://rs.school/js-stage0/) «JavaScript/Front-end. Stage 0»
