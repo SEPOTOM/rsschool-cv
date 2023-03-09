@@ -28,3 +28,49 @@ In high school, I started to get interested in website development and realized 
 - GitHub
 - Chrome DevTools
 - Figma for developer
+
+## Code examples
+
+My solution for the 6 kyu kata [Base Conversion](https://www.codewars.com/kata/526a569ca578d7e6e300034e/solutions/javascript) from Codewars:
+
+```
+function convert(input, source, target) {
+  const sourceArr = source.split('');
+  const inputArr = input.split('').map((num) => {
+    return sourceArr.indexOf(num);
+  });
+  const targetArr = target.split('');
+
+  let decemalVal = inputArr.shift();
+
+  while(inputArr.length) {
+    decemalVal = decemalVal * sourceArr.length;
+
+    if(inputArr[0]) {
+      decemalVal += inputArr[0];
+    }
+
+    inputArr.shift();
+  }
+
+  while(true) {
+    inputArr.unshift(decemalVal % targetArr.length);
+    decemalVal = Math.floor(decemalVal / targetArr.length);
+
+    if(decemalVal <= (targetArr.length - 1)) {
+      inputArr.unshift(decemalVal);
+      break;
+    }
+  }
+
+  while(targetArr[inputArr[0]] === targetArr[0] && inputArr.length > 1) {
+    inputArr.shift();
+  }
+
+
+
+  return inputArr.map((idx) => {
+    return targetArr[idx];
+  }).join('');
+}
+```
